@@ -10,3 +10,6 @@ Proyek Flutter untuk latihan membuat layouting menggunakan container dan widget 
 
 ### 2. Halaman Utama Marketplace
 - **Home Page (`lib/home_page.dart`):** Halaman utama yang menampilkan produk-produk. Terdiri dari App Bar, Search Bar, daftar kategori, banner promosi, dan grid produk. Juga mencakup Bottom Navigation Bar untuk navigasi.
+
+### 3. Halaman Profil Pengguna
+- **Profile Page (`lib/profile_page.dart`):** Halaman untuk menampilkan informasi pengguna dan menu terkait akun seperti Edit Profil, Riwayat Pesanan, dan Keluar.
