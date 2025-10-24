@@ -13,3 +13,6 @@ Proyek Flutter untuk latihan membuat layouting menggunakan container dan widget 
 
 ### 3. Halaman Profil Pengguna
 - **Profile Page (`lib/profile_page.dart`):** Halaman untuk menampilkan informasi pengguna dan menu terkait akun seperti Edit Profil, Riwayat Pesanan, dan Keluar.
+
+### 4. Deklarasi Aset
+- **Pubspec (`pubspec.yaml`):** Menambahkan folder `assets/` ke dalam `pubspec.yaml` agar aplikasi dapat menggunakan gambar dan aset lokal lainnya.
