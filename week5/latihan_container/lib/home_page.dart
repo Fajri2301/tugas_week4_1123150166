@@ -156,19 +156,28 @@ class HomePageBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          _buildSearchBar(),
-          _buildSectionTitle('Kategori'),
-          _buildCategoryList(),
-          _buildSectionTitle('Penawaran Spesial'),
-          _buildPromoBanner(),
-          _buildSectionTitle('Produk Unggulan'),
-          _buildProductGrid(),
-        ],
-      ),
+    return LayoutBuilder(
+      builder: (context, viewportConstraints) {
+        return SingleChildScrollView(
+          child: ConstrainedBox(
+            constraints: BoxConstraints(
+              minHeight: viewportConstraints.maxHeight,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _buildSearchBar(),
+                _buildSectionTitle('Kategori'),
+                _buildCategoryList(),
+                _buildSectionTitle('Penawaran Spesial'),
+                _buildPromoBanner(),
+                _buildSectionTitle('Produk Unggulan'),
+                _buildProductGrid(),
+              ],
+            ),
+          ),
+        );
+      },
     );
   }
 
